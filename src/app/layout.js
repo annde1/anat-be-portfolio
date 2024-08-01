@@ -1,7 +1,12 @@
-import { Inter } from "next/font/google";
+import { Fira_Code } from "next/font/google";
+import Container from "react-bootstrap/Container";
+import NavBar from "./components/NavBar";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Fira_Code({
+  weight: "300",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Container fluid>
+          <NavBar />
+          <main>{children}</main>
+        </Container>
+      </body>
     </html>
   );
 }
