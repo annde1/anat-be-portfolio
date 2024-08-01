@@ -1,0 +1,26 @@
+.hello {
+  color: white;
+  letter-spacing: 7px !important;
+  font-size: 1.3rem;
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  animation: typewriter 1s steps(44) 1s 1 normal both,
+    blinkTextCursor 400ms infinite;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13rem;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

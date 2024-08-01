@@ -1,10 +1,23 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Container from "react-bootstrap/Container";
+import Hello from "./components/Hello";
+import Name from "./components/Name";
+
 export default function Home() {
   return (
     <>
-      <h1>Hello</h1>
+      <div
+        style={{
+          marginTop: "5rem",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ width: "80%" }}>
+          <Hello />
+          <Name />
+        </div>
+      </div>
     </>
   );
 }
