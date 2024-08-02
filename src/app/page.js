@@ -1,4 +1,4 @@
-import ContactButton from "./components/ContactBtn";
+import Button from "./components/Btn";
 import Description from "./components/Description";
 import Hello from "./components/Hello";
 import MainSentence from "./components/MainSentence";
@@ -21,7 +21,7 @@ export default function Home() {
           <Name />
           <MainSentence />
           <Description />
-          <ContactButton />
+          <Button to="/contact" text="Let's connect" />
         </div>
       </div>
     </>

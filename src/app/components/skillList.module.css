@@ -1,0 +1,18 @@
+.box {
+  border: 1px solid #292929;
+  height: 160px;
+  width: 160px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 70%;
+  margin-top: 1rem;
+}

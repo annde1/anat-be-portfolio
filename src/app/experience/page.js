@@ -1,4 +1,5 @@
-import SkillsHeading from "../components/SkillsHeading";
+import PageHeading from "../components/PageHeading";
+import SkillsList from "../components/SkillsList";
 
 function Experience() {
   return (
@@ -11,7 +12,8 @@ function Experience() {
         alignItems: "center",
       }}
     >
-      <SkillsHeading />
+      <PageHeading name="Skills" />
+      <SkillsList />
     </div>
   );
 }

@@ -1,14 +1,13 @@
-import styles from "./skillsHeading.module.css";
-function SkillsHeading() {
-  const s = "Skills";
+import styles from "./pageHeading.module.css";
+function PageHeading({ name }) {
   const slash = "()";
   const close = ";";
   return (
     <span
-      style={{ fontWeight: "800", fontSize: "2.2rem" }}
+      style={{ fontWeight: "800", fontSize: "2.2rem", marginBottom: "4rem" }}
       className={styles.heading}
     >
-      <span>{s}</span>
+      <span>{name}</span>
       <span
         style={{
           marginLeft: "0.3rem",
@@ -21,4 +20,4 @@ function SkillsHeading() {
     </span>
   );
 }
-export default SkillsHeading;
+export default PageHeading;

@@ -5,17 +5,16 @@ const inter = Fira_Code({
   weight: "400",
   subsets: ["latin"],
 });
-function ContactButton() {
+function Button({ to, text }) {
   return (
     <div className={styles.container}>
       <Link
-        href="/contact"
+        href={to}
         className={`${inter.className} ${styles.btn} ${styles.link}`}
-        data-sm-link-text="CLICK"
       >
-        Let&apos;s Connect
+        {text}
       </Link>
     </div>
   );
 }
-export default ContactButton;
+export default Button;
