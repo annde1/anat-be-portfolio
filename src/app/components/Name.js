@@ -8,7 +8,7 @@ const roboto = Poppins({
 function Name() {
   return (
     <div className={roboto.className}>
-      <p className={styles.name}>Anat Ben Elazar</p>
+      <p className={`${styles.name} ${styles.textFadeIn}`}>Anat Ben Elazar</p>
     </div>
   );
 }

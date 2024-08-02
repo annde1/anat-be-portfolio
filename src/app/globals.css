@@ -20,7 +20,7 @@ body {
   );
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0f1019", endColorstr="#3b2249", GradientType=1 );
-  height: 100vh;
+
   font-family: "IBM Plex Mono", monospace;
   color: white;
 }
