@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./skillList.module.css";
 function SkillsList() {
-  //todo: add tooltip
+  //todo: add tooltip, hover animation
   const skills = [
     { name: "Javascript", id: "js", img: "/images/js.svg" },
     { name: "Html", id: "html", img: "/images/html5-logo-31813.png" },

@@ -15,6 +15,7 @@ function Project({ src, description, stack, name, link }) {
     <div
       style={{
         display: "flex",
+        backgroundColor: "rgba(22, 21, 34, 0.3)",
         flexDirection: "column",
         alignItems: "flex-start",
         justifyContent: "center",

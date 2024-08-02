@@ -1,18 +1,18 @@
 .container {
   display: flex;
 }
-.link {
-  font-size: 1rem;
-  padding: 1rem 2rem;
+
+.btn {
+  background: none;
   color: #f4f4f4;
   text-transform: uppercase;
-}
-.btn {
+  padding: 1rem 2rem;
   text-decoration: none;
   border: 1px solid #cf59e6;
   border-radius: 30px;
   position: relative;
   overflow: hidden;
+  width: 8rem;
 }
 
 .btn:hover {
