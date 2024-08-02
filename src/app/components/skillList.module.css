@@ -1,14 +1,21 @@
 .box {
   border: 1px solid #292929;
+  background-color: rgba(22, 21, 34, 0.3);
   height: 160px;
   width: 160px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+  transform: scale(1.1); /* Scale up by 10% on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow effect */
 }
 .skillsContainer {
   display: flex;
+
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;

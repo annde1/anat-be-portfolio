@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "./skillList.module.css";
+import Transition from "./Transition";
+
 function SkillsList() {
-  //todo: add tooltip, hover animation
   const skills = [
     { name: "Javascript", id: "js", img: "/images/js.svg" },
     { name: "Html", id: "html", img: "/images/html5-logo-31813.png" },
@@ -39,14 +40,18 @@ function SkillsList() {
     { name: "Gatsby", id: "gatsby", img: "/images/gatsby.svg" },
     { name: "Node JS", id: "node", img: "/images/nodejs.png" },
   ];
+
   return (
-    <div className={styles.skillsContainer}>
-      {skills.map((skill) => (
-        <div key={skill.id} className={styles.box}>
-          <Image alt={skill.name} src={skill.img} width={100} height={100} />
-        </div>
-      ))}
-    </div>
+    <Transition>
+      <div className={styles.skillsContainer}>
+        {skills.map((skill) => (
+          <div key={skill.id} className={styles.box}>
+            <Image alt={skill.name} src={skill.img} width={100} height={100} />
+          </div>
+        ))}
+      </div>
+    </Transition>
   );
 }
+
 export default SkillsList;

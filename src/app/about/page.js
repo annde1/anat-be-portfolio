@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PageHeading from "../components/PageHeading";
 import Button from "../components/Btn";
+import ImageTransition from "../components/ImageTransition";
 
 function About() {
   return (
@@ -42,15 +43,17 @@ function About() {
             kitchen or working out at the gym.
           </p>
         </div>
-        <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>
-          <Image
-            src="/images/profile-pic-anat.png"
-            width={330}
-            height={330}
-            quality={100}
-            alt="profile"
-          />
-        </div>
+        <ImageTransition>
+          <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>
+            <Image
+              src="/images/profile-pic-anat.png"
+              width={330}
+              height={330}
+              quality={100}
+              alt="profile"
+            />
+          </div>
+        </ImageTransition>
       </div>
       <Button
         text="Resumee"

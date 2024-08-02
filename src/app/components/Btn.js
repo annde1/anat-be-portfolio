@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./SubmitBtn.module.css";
+import styles from "./contactBtn.module.css";
 import { Fira_Code } from "next/font/google";
 const inter = Fira_Code({
   weight: "400",
