@@ -3,7 +3,11 @@ import PageHeading from "../components/PageHeading";
 import Button from "../components/Btn";
 import ImageTransition from "../components/ImageTransition";
 import styles from "./about.module.css";
-
+export const metadata = {
+  title: "Anat Ben Elazar Portfolio - About",
+  description:
+    "Welcome to Anat Ben Elazar's web developer portfolio. With expertise in JavaScript, React, and Node.js, I create beautiful, functional websites. Check out my projects and see how we can work together to bring your ideas to life.",
+};
 function About() {
   return (
     <div className={styles.aboutPageContainer}>
