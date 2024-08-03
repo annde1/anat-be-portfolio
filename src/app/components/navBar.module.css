@@ -29,6 +29,14 @@
   margin-top: 3rem;
   width: 90%;
   position: sticky;
+  top: 0;
+  background-color: rgba(
+    22,
+    21,
+    34,
+    0.9
+  ); /* Ensure background is opaque for better visibility */
+  z-index: 1000; /* Ensure the nav stays on top */
 }
 
 .navContainer {
@@ -75,6 +83,7 @@
   .hamburger {
     display: block;
   }
+
   .listItem {
     margin: 1rem 0;
   }

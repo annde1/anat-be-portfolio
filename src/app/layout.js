@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Footer from "./components/Footer";
 
 const inter = Fira_Code({
   weight: "300",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <Container>
           <NavBar />
           <main>{children}</main>
+          <Footer />
         </Container>
       </body>
     </html>
