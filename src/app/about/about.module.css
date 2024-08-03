@@ -42,7 +42,7 @@
   }
   .aboutText {
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: center;
   }
 }
 @media (max-width: 1254px) {
