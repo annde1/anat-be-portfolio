@@ -9,4 +9,11 @@
 }
 .footerText {
   font-size: 1.3rem;
+  text-align: center;
+}
+@media (max-width: 420px) {
+  .footerText {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
