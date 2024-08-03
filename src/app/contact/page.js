@@ -1,22 +1,16 @@
 import ContactForm from "../components/ContactForm";
-import LinkedinIcon from "../components/LinkedinIcon";
 import PageHeading from "../components/PageHeading";
+import styles from "./contact.module.css";
+import SocialIcons from "../components/SocialIcons";
 
 function Contact() {
   return (
-    <div
-      style={{
-        height: "100vh",
-        marginTop: "8rem",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <div className={styles.container}>
       <PageHeading name="Contact" />
       <ContactForm />
-      <LinkedinIcon />
+      <SocialIcons />
     </div>
   );
 }
+
 export default Contact;

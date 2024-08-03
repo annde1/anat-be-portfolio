@@ -1,17 +1,9 @@
 import PageHeading from "../components/PageHeading";
 import ProjectsList from "../components/ProjectsList";
-
+import styles from "./projects.module.css";
 function Projects() {
   return (
-    <div
-      style={{
-        marginTop: "8rem",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <div className={styles.container}>
       <PageHeading name="Projects" />
       <ProjectsList />
     </div>

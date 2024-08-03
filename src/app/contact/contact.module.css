@@ -1,0 +1,81 @@
+.socialIcons {
+  padding: 0;
+  list-style: none;
+  margin-top: 4rem;
+}
+.socialIcons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.8em;
+}
+.socialIcons i {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transition: all 265ms ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialIcons a {
+  display: inline-block;
+}
+.socialIcons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 55px;
+  height: 55px;
+  border: 1px solid;
+  border-color: #fff;
+  border-radius: 100%;
+  display: block;
+  transition: all 265ms ease-out;
+}
+.socialIcons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.socialIcons a:hover i {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  border-style: none;
+  transition: all 265ms ease-in;
+}
+.container {
+  margin-bottom: 2rem;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100vh);
+}
+
+@media (max-width: 1448px) {
+  .container {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 377px) {
+  .socialIcons a:before {
+    width: 45px;
+    height: 45px;
+  }
+  .socialIcons li {
+    font-size: 1.2em;
+  }
+  .container {
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+}

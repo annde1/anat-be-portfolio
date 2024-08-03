@@ -1,15 +1,9 @@
 import Project from "./Project";
 import { projects } from "../../../lib/data.js";
+import styles from "./projectList.module.css";
 function ProjectsList() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "5rem",
-        width: "50%",
-      }}
-    >
+    <div className={styles.container}>
       {projects.map((project) => (
         <Project
           key={project.name}

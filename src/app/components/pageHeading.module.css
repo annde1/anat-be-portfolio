@@ -4,3 +4,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.container {
+  margin-bottom: 5rem;
+}
+@media (max-width: 1272px) {
+  .container {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+}

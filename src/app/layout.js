@@ -2,7 +2,6 @@ import { Fira_Code } from "next/font/google";
 import Container from "react-bootstrap/Container";
 import NavBar from "./components/NavBar";
 import "./globals.css";
-
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 

@@ -4,3 +4,23 @@
   color: white;
   margin: 0;
 }
+@media (max-width: 1167px) {
+  .mainSentece {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 968px) {
+  .mainSentece {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 667px) {
+  .mainSentece {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .mainSentece {
+    font-size: 1.2rem;
+  }
+}

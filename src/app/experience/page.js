@@ -1,17 +1,9 @@
 import PageHeading from "../components/PageHeading";
 import SkillsList from "../components/SkillsList";
-
+import styles from "./experience.module.css";
 function Experience() {
   return (
-    <div
-      style={{
-        height: "100vh",
-        marginTop: "8rem",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <div className={styles.container}>
       <PageHeading name="Skills" />
       <SkillsList />
     </div>
