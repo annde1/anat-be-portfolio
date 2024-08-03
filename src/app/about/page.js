@@ -43,7 +43,7 @@ function About() {
         </ImageTransition>
       </div>
       <Button
-        text="Resumee"
+        text="Resume"
         to="/Anat_Ben_Elazar_resumee.pdf"
         download="Anat_Ben_Elazar_resumee.pdf"
       />
