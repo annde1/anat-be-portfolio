@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./navBar.module.css";
-
+import Image from "next/image";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const closeMenu = () => setIsOpen(false);
@@ -14,6 +14,14 @@ function NavBar() {
         <button className={styles.hamburger} onClick={toggleMenu}>
           ☰
         </button>
+
+        <Image
+          src="/images/Ana.png"
+          width={70}
+          height={70}
+          className={styles.logo}
+        />
+
         <ul className={`${styles.navList} ${isOpen ? styles.showMenu : ""}`}>
           <li className={styles.listItem}>
             <Link href="/" className={styles.link} onClick={closeMenu}>

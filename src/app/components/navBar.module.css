@@ -1,28 +1,18 @@
-.link {
-  color: white;
-  font-size: 1.3rem;
-  margin-right: 3rem;
-  text-decoration: none;
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-}
+/* navBar.module.css */
 
-.link:hover {
-  text-decoration: underline;
-}
-
-.listItem {
-  list-style-type: none;
-}
-
-.navList {
+/* Container for the nav bar */
+.navContainer {
   display: flex;
-  justify-content: flex-end;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align items vertically */
+  width: 100%;
 }
 
+/* Nav bar itself */
 .nav {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Distribute space between logo and nav list */
   border: 1px solid;
   border-color: #e2e2e207;
   border-radius: 40px;
@@ -37,17 +27,43 @@
     0.9
   ); /* Ensure background is opaque for better visibility */
   z-index: 1000; /* Ensure the nav stays on top */
+  padding: 0 1rem; /* Add padding to avoid content touching the edges */
 }
 
-.navContainer {
+/* Logo styling */
+.logo {
+  border-radius: 30px;
+}
+
+/* Navigation list styling */
+.navList {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end; /* Align list items to the right */
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  flex: 1; /* Allow nav list to take remaining space */
 }
 
+.listItem {
+  list-style-type: none;
+}
+
+.link {
+  color: white;
+  font-size: 1.3rem;
+  margin-right: 3rem;
+  text-decoration: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger menu styling */
 .hamburger {
-  display: none;
+  display: none; /* Hide by default */
   background: transparent;
   border: none;
   color: white;
@@ -55,13 +71,10 @@
   cursor: pointer;
 }
 
-.showMenu {
-  display: block;
-}
-
+/* Show hamburger menu only on mobile */
 @media (max-width: 768px) {
   .navList {
-    display: none;
+    display: none; /* Hide nav list by default on mobile */
     flex-direction: column;
     width: 90%;
     position: absolute;
@@ -72,7 +85,7 @@
   }
 
   .navList.showMenu {
-    display: flex;
+    display: flex; /* Show menu when toggled */
   }
 
   .link {
@@ -81,7 +94,7 @@
   }
 
   .hamburger {
-    display: block;
+    display: block; /* Show hamburger menu on mobile */
   }
 
   .listItem {
