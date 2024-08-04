@@ -1,4 +1,4 @@
-import { Fira_Code } from "next/font/google";
+import { Inconsolata } from "next/font/google";
 import Container from "react-bootstrap/Container";
 import NavBar from "./components/NavBar";
 import "./globals.css";
@@ -7,7 +7,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Footer from "./components/Footer";
 
-const inter = Fira_Code({
+const inter = Inconsolata({
   weight: "300",
   subsets: ["latin"],
 });
