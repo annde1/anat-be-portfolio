@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./ProjectCard.module.css";
+import styles from "./projectCard.module.css";
 import Button from "./Btn";
 function ProjectCard({ src, description, stack, name, link }) {
   return (
