@@ -33,7 +33,7 @@
 
 @media (max-width: 870px) {
   .container {
-    grid-template-columns: 1fr; /* Display 1 card per row */
+    grid-template-columns: 1fr;
     width: 90%;
   }
 }
