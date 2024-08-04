@@ -16,7 +16,7 @@ body {
 
   background: -webkit-linear-gradient(
     270deg,
-    hsla(234, 25%, 8%, 1) 27%,
+    hsl(235, 27%, 8%) 27%,
     hsla(278, 36%, 21%, 1) 88%
   );
 

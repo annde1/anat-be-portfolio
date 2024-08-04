@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -14,5 +14,26 @@
   .container {
     width: 90%;
     gap: 4rem;
+  }
+} */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Display 3 cards per row */
+  gap: 4rem; /* Space between cards */
+  width: 80%; /* Ensure full width of the container */
+  margin: auto; /* Center the grid */
+}
+
+@media (max-width: 1118px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Display 2 cards per row */
+    width: 90%;
+  }
+}
+
+@media (max-width: 870px) {
+  .container {
+    grid-template-columns: 1fr; /* Display 1 card per row */
+    width: 90%;
   }
 }

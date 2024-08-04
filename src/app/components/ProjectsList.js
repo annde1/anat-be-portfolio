@@ -1,11 +1,12 @@
-import Project from "./Project";
-import { projects } from "../../../lib/data.js";
+import ProjectCard from "./ProjectCard";
+import { projects } from "../../../lib/data";
 import styles from "./projectList.module.css";
+
 function ProjectsList() {
   return (
     <div className={styles.container}>
       {projects.map((project) => (
-        <Project
+        <ProjectCard
           key={project.name}
           src={project.img}
           description={project.description}

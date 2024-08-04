@@ -17,6 +17,12 @@ dependencies:
   '@fortawesome/react-fontawesome':
     specifier: ^0.2.2
     version: 0.2.2(@fortawesome/fontawesome-svg-core@6.6.0)(react@18.3.1)
+  boostrap:
+    specifier: ^2.0.0
+    version: 2.0.0
+  bootstrap:
+    specifier: ^5.3.3
+    version: 5.3.3(@popperjs/core@2.11.8)
   framer-motion:
     specifier: ^11.3.21
     version: 11.3.21(react-dom@18.3.1)(react@18.3.1)
@@ -601,6 +607,19 @@ packages:
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
+
+  /boostrap@2.0.0:
+    resolution: {integrity: sha512-JEeFMOweKeGXEM9rt95eaVISOkluG9aKcl0jQCETOVH9jynCZxuBZe2oWgcWJpj5wqYWZl625SnW7OgHT2Ineg==}
+    deprecated: Package no longer supported. Contact support@npmjs.com for more info.
+    dev: false
+
+  /bootstrap@5.3.3(@popperjs/core@2.11.8):
+    resolution: {integrity: sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.8
+    dependencies:
+      '@popperjs/core': 2.11.8
+    dev: false
 
   /brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
