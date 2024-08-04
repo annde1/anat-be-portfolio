@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./skillList.module.css";
 import Transition from "./Transition";
 import { skills } from "../../../lib/data";
+
 function SkillsList() {
   return (
     <Transition>
@@ -9,6 +10,7 @@ function SkillsList() {
         {skills.map((skill) => (
           <div key={skill.id} className={styles.box}>
             <Image alt={skill.name} src={skill.img} width={100} height={100} />
+            <div className={styles.tooltip}>{skill.name}</div>
           </div>
         ))}
       </div>
