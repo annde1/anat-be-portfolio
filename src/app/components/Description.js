@@ -6,7 +6,7 @@ const poppins = Poppins({
 });
 function Description() {
   return (
-    <div style={{ width: "60%", marginBottom: "3rem" }}>
+    <div className={styles.container}>
       <p className={`${poppins.className} ${styles.description}`}>
         As a fullstack developer, I specialize in creating dynamic and
         responsive websites using HTML, CSS, and JavaScript. My expertise in

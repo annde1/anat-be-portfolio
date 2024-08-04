@@ -1,9 +1,16 @@
 .description {
   font-size: 2rem;
 }
+.container {
+  width: 60%;
+  margin-bottom: 3rem;
+}
 @media (max-width: 1167px) {
   .description {
     font-size: 1.7rem;
+  }
+  .container {
+    width: 75%;
   }
 }
 @media (max-width: 968px) {
@@ -19,5 +26,15 @@
 @media (max-width: 450px) {
   .description {
     font-size: 1.1rem;
+    text-align: left;
+  }
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .description {
+    font-size: 1rem;
+    text-align: center;
   }
 }

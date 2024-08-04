@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Button from "./Btn";
-import { Montserrat } from "next/font/google";
 import styles from "./project.module.css";
-const poppins = Montserrat({
+import { Poppins } from "next/font/google";
+const inter = Poppins({
   weight: "300",
   subsets: ["latin"],
 });
-const fontBold = Montserrat({
-  weight: "500",
+const interThiner = Poppins({
+  weight: "200",
   subsets: ["latin"],
 });
 function Project({ src, description, stack, name, link }) {
@@ -16,19 +16,16 @@ function Project({ src, description, stack, name, link }) {
   };
 
   return (
-    <div className={`${poppins.className} ${styles.projectContainer}`}>
+    <div className={` ${styles.projectContainer} ${inter.className}`}>
       {src && <Image src={src} alt={name} width={50} height={50} />}
 
       <p className={styles.title}>{name}</p>
 
-      <p className={styles.description}>{description}</p>
-      <span style={{ fontSize: "1.3rem", marginBottom: "3rem" }}>
-        <span
-          style={{ marginBottom: "2rem", lineHeight: "1.6" }}
-          className={fontBold.className}
-        >
-          Stack
-        </span>
+      <p className={`${styles.description} ${interThiner.className}`}>
+        {description}
+      </p>
+      <span className={`${styles.stack} ${interThiner.className}`}>
+        <span className={styles.technologies}>Stack</span>
         <div dangerouslySetInnerHTML={html()}></div>
       </span>
 

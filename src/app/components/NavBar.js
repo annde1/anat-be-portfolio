@@ -20,6 +20,7 @@ function NavBar() {
           width={70}
           height={70}
           className={styles.logo}
+          alt="portfolio-logo"
         />
 
         <ul className={`${styles.navList} ${isOpen ? styles.showMenu : ""}`}>

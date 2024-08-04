@@ -4,15 +4,7 @@ function PageHeading({ name }) {
   const close = ";";
   return (
     <div className={styles.container}>
-      <span
-        style={{
-          fontWeight: "800",
-          fontSize: "2.2rem",
-          marginBottom: "4rem",
-          textAlign: "center",
-        }}
-        className={styles.heading}
-      >
+      <span className={styles.heading}>
         <span>{name}</span>
         <span
           style={{
