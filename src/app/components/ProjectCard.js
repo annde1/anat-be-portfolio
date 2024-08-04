@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./ProjectCard.module.css";
-import Link from "next/link";
 import Button from "./Btn";
 function ProjectCard({ src, description, stack, name, link }) {
   return (
