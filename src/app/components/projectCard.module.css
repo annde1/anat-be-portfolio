@@ -17,8 +17,6 @@
 .cardBody {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
   padding: 2rem;
   background-color: #161521;
 }
@@ -39,4 +37,7 @@
   font-size: 0.875rem;
   color: white;
   margin-bottom: 1rem;
+}
+.cardImage {
+  width: 100%;
 }

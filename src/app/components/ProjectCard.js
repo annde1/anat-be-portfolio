@@ -7,7 +7,7 @@ function ProjectCard({ src, description, stack, name, link }) {
       <Image
         src={src}
         alt={name}
-        width={370}
+        width={380}
         height={255}
         className={styles.cardImage}
       />
